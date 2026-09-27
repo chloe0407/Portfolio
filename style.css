@@ -1,0 +1,138 @@
+html {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.pop {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+p {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* body {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+body.fade-in {
+    opacity: 1;
+} */
+
+/* ヘッダー */
+header {
+    padding: 27px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #fff;
+}
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    text-decoration: none;
+    color: inherit;
+}
+.header_menu ul {
+    margin-left: 40px;
+}
+.header_menu ul a {
+    transition: .3s;
+    text-decoration: none;
+    color: inherit;
+}
+.header_menu ul a:hover {
+    color: #80BA4A;
+    transition: .3s;
+}
+
+/* メイン */
+main {
+    margin-left: 15rem;
+    margin-right: 15rem;
+    margin-top: 8.75rem;
+}
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 64px;
+}
+.work-item {
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.work-item img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+.work-item:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.8);
+}
+/* モーダル */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 999;
+}
+.modal-content {
+  position: relative;
+  width: 80%;
+  max-width: 900px;
+  margin: 5% auto;
+}
+#player {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+#close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* Contact.html */
+.icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.produce {
+    padding-top: 2rem;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
